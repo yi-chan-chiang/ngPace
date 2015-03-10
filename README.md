@@ -3,24 +3,37 @@ angularJS &amp; Pacejs
 
 <a href="http://jsbin.com/tayuki" target"_blank">DEMO</a>
 
-use paceJS
+use
 
 <a href="http://github.hubspot.com/pace/docs/welcome/" target="_blank">PACEJS</a>
 
-choose css Themes
+<h2>choose css Themes</h2>
 
 JS like
 
 <pre>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.js"></script>
-	<link rel=stylesheet type="text/css" href="https://cdn.rawgit.com/yi-chan-chiang/ngPace/master/ngPace.css">    
-	<script src="https://cdn.rawgit.com/yi-chan-chiang/ngPace/master/ngPace.js"></script>
+
+</pre>
+<pre>
+<span class="pl-s2">  &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>
+https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.js
+<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+
+<span class="pl-s2">  &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>
+https://cdn.rawgit.com/yi-chan-chiang/ngPace/master/ngPace.js
+<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+
+<span class="pl-s2">  &lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">"</span>
+https://cdn.rawgit.com/yi-chan-chiang/ngPace/master/ngPace.css
+<span class="pl-pds">"</span></span>&gt;</span>
 </pre>
 
-set pacejs like9
+<h2>angular like</h2>
 
 <pre>
-	ngPace.pace.options.ajax.trackMethods = ["GET", "POST", "PUT", "DELETE"];
-        //settime(ms)
-        ngPace.pace.options.restartOnRequestAfter = 1;
+var app = angular.module('myApp', ['autoLoad.pace']);
+app.run(function(ngPace){
+  ngPace.pace.options.ajax.trackMethods = ["GET", "POST", "PUT", "DELETE"];
+  ngPace.pace.options.restartOnRequestAfter = 100;
+});
 </pre>
