@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('autoLoad.pace', [])
-    .factory('ngPace', ['$timeout', '$window', '$rootScope', function ($timeout, $window, $rootScope) {
+    .factory('ngPace', ['$window', '$rootScope', function ($window, $rootScope) {
         var pace = $window.Pace;
         //public methods
         $rootScope.ngPace = {};
