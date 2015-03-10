@@ -9,11 +9,9 @@ use
 
 <h2>choose css Themes</h2>
 
-JS like
 
-<pre>
+<h2>JS like</h2>
 
-</pre>
 <pre>
 <span class="pl-s2">  &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>
 https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.js
