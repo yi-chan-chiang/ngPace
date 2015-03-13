@@ -30,6 +30,20 @@ app.run(function(ngPace){
 });
 </pre>
 
+<h2>WHEN START LOADING</h2>
+<pre>
+$rootScope.ngPace.isloading = true;
+$rootScope.ngPace.iserror = false;
+$rootScope.ngPace.isnone = false;
+</pre>
+
+<h2>WHEN END LOADING</h2>
+<pre>
+$rootScope.ngPace.isloading = false;
+$rootScope.ngPace.iserror = false;
+$rootScope.ngPace.isnone = false;
+</pre>
+
 <h2>License</h2>
 The MIT License (MIT)
 
