@@ -1,8 +1,7 @@
-//yi-chan-chiang
 'use strict';
 
-angular.module('autoLoad.pace', [])
-    .factory('ngPace', ['$window', '$rootScope', function ($window, $rootScope) {
+angular.module('chiang.ngPace', [])
+    .factory('$ngPace', ['$window', '$rootScope', function ($window, $rootScope) {
         var pace = $window.Pace;
         //public methods
         $rootScope.ngPace = {};
