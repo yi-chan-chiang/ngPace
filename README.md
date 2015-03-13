@@ -23,8 +23,8 @@ use
 <h2>angular like</h2>
 
 <pre>
-var app = angular.module('myApp', ['autoLoad.pace']);
-app.run(function(ngPace){
+var app = angular.module('myApp', ['chiang.ngPace']);
+app.run(function($ngPace){
   ngPace.pace.options.ajax.trackMethods = ["GET", "POST", "PUT", "DELETE"];
   ngPace.pace.options.restartOnRequestAfter = 100;
 });
