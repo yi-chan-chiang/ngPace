@@ -1,0 +1,14 @@
+{
+  "name": "ngPace",
+  "homepage": "https://github.com/yi-chan-chiang/ngPace",
+  "_release": "eca420c767",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "eca420c76769626a0ea03c34cd29057c7d449ff1"
+  },
+  "_source": "git://github.com/yi-chan-chiang/ngPace.git",
+  "_target": "*",
+  "_originalSource": "yi-chan-chiang/ngPace",
+  "_direct": true
+}

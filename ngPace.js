@@ -7,11 +7,13 @@ angular.module('chiang.ngPace', [])
         $rootScope.ngPace = {};
         $rootScope.ngPace.isloading = true;
         $rootScope.ngPace.visble = {'true': 'visble'};
-        //var targetElement = document.querySelector('body');
-        //this.el = document.createElement('div');
-        //this.el.className = "ng-pace";
-        //this.el.innerHTML = '<div class="pace-mask" ng-class="ngPace.visble[!ngPace.isloading]"></div>';
-        //targetElement.appendChild(this.el);
+        pace.options.ajax.trackMethods = ["GET", "POST", "PUT", "DELETE"];
+        pace.options.restartOnRequestAfter = 100;
+        // var targetElement = document.querySelector('body');
+        // this.el = document.createElement('div');
+        // this.el.className = "ng-pace";
+        // this.el.innerHTML = '<div class="pace-mask" ng-class="ngPace.visble[!ngPace.isloading]"></div>';
+        // targetElement.appendChild(this.el);
         var self = {
             pace: pace,
             startloading: function () {
